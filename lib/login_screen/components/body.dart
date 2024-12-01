@@ -117,7 +117,6 @@ class Body extends StatelessWidget {
   void loginClick({required BuildContext context, required Future<String?> Function() loginFuction}) async {
     FocusScope.of(context).unfocus();
     ScaffoldMessenger.of(context).clearSnackBars();
-    try {
       String? loginStatus = await loginFuction();
       if (loginStatus == 'Auth Success') {
         // ignore: use_build_context_synchronously
@@ -134,19 +133,5 @@ class Body extends StatelessWidget {
           ),
         );
       }
-    } catch (e) {
-      // ignore: use_build_context_synchronously
-      ScaffoldMessenger.of(context).clearSnackBars();
-      debugPrint(e.toString());
-      // ignore: use_build_context_synchronously
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'Something went wrong.',
-            textScaler: TextScaler.linear(1),
-          ),
-        ),
-      );
-    }
   }
 }
