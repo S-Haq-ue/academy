@@ -41,25 +41,248 @@ class Body extends StatelessWidget {
                       child: Row(
                         children: [
                           Container(
+                            width: 300,
                             padding: const EdgeInsets.all(paddingValue - 6.0),
-                            width: 220,
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: backgroundColor),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
                                   padding: const EdgeInsets.all(paddingValue - 6.0),
-                                  height: 150,
-                                  width: 120,
-                                  child: Image.asset(isto,fit: BoxFit.fitWidth,),
+                                  width: 300,
+                                  child: Image.asset(
+                                    isto,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                        height: 30,
+                                        width: 22,
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(20),
+                                            border: Border.all(color: hintColor)),
+                                        child: Center(
+                                            child: Text(
+                                          "हिं",
+                                          style: normalText,
+                                        ))),
+                                    const SizedBox(
+                                      width: 10,
+                                    ),
+                                    SizedBox(
+                                      child: Text(
+                                        "FULL SYLLABUS COMPLETION",
+                                        style: normalText.copyWith(color: Colors.blueAccent),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "Abhyaas - Railways Group D",
+                                  textScaler: const TextScaler.linear(1),
+                                  style: boldText.copyWith(fontSize: 18),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.calendar,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "Started on 5 jan 2022",
+                                        textScaler: const TextScaler.linear(1),
+                                        style: normalText.copyWith(color: Colors.white54),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.clock,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "Morning classes",
+                                        textScaler: const TextScaler.linear(1),
+                                        style: normalText.copyWith(color: Colors.white54),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.person,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      SizedBox(
+                                        child: Text(
+                                          "M S Mustafa, Deepak Kumar\nSharma, Samar Pratab Sing",
+                                          textScaler: const TextScaler.linear(1),
+                                          style: normalText.copyWith(color: Colors.white54),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                           Container(
+                            width: 300,
                             padding: const EdgeInsets.all(paddingValue - 6.0),
-                            height: 300,
-                            width: 220,
                             decoration: BoxDecoration(borderRadius: BorderRadius.circular(10), color: backgroundColor),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(paddingValue - 6.0),
+                                  width: 300,
+                                  child: Image.asset(
+                                    isto,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                        height: 30,
+                                        width: 22,
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(20),
+                                            border: Border.all(color: hintColor)),
+                                        child: Center(
+                                            child: Text(
+                                          "हिं",
+                                          style: normalText,
+                                        ))),
+                                    const SizedBox(
+                                      width: 10,
+                                    ),
+                                    SizedBox(
+                                      child: Text(
+                                        "FULL SYLLABUS COMPLETION",
+                                        style: normalText.copyWith(color: Colors.blueAccent),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                const SizedBox(
+                                  width: 20,
+                                ),
+                                Text(
+                                  "लक्ष्य - RRB NTPC CBT",
+                                  textScaler: const TextScaler.linear(1),
+                                  style: boldText.copyWith(fontSize: 18),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.calendar,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "Started on 5 jan 2022",
+                                        textScaler: const TextScaler.linear(1),
+                                        style: normalText.copyWith(color: Colors.white54),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.clock,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      Text(
+                                        "Morning classes",
+                                        textScaler: const TextScaler.linear(1),
+                                        style: normalText.copyWith(color: Colors.white54),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Row(
+                                    children: [
+                                      const Icon(
+                                        Bootstrap.person,
+                                        size: 15,
+                                        color: secondaryColor,
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
+                                      SizedBox(
+                                        child: Text(
+                                          "M S Mustafa, Deepak Kumar\nSharma, Samar Pratab Sing",
+                                          textScaler: const TextScaler.linear(1),
+                                          style: normalText.copyWith(color: Colors.white54),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
@@ -149,7 +372,7 @@ class Body extends StatelessWidget {
                               height: 250,
                               width: 150,
                               child: Image.asset(
-                                manImage,
+                                human,
                                 fit: BoxFit.fitHeight,
                               )),
                           const SizedBox(

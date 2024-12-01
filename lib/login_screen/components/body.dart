@@ -39,7 +39,7 @@ class Body extends StatelessWidget {
                           textInputAction: TextInputAction.next,
                           validator: (username) {
                             if (username!.isEmpty) {
-                              return 'Please enter email id';
+                              return 'Please enter username';
                             }
                             return null;
                           },
@@ -65,7 +65,7 @@ class Body extends StatelessWidget {
                           validator: (password) {
                             if (password!.isEmpty) {
                               return 'Please enter password';
-                            } else if (password.length < 6) {
+                            } else if (password.length < 4) {
                               return 'Password must be at least 6 characters long';
                             }
                             return null;

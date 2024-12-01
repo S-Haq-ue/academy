@@ -52,4 +52,4 @@ class UserDetails {
   int get hashCode => name.hashCode ^ password.hashCode;
 }
 
-final userCred = UserDetails(name: "user", password: "123456");
+final userCred = UserDetails(name: "user", password: "1234");
